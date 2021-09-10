@@ -182,6 +182,7 @@ body._lock {
 .menu__body {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 50px;
 }
 
 .menu__list > li {
@@ -317,8 +318,16 @@ body._touch .menu__arrow {
   height: 2px;
 }
 
-.menu__list-link-tel li {
-  list-style-image: url(/img/index/header/header_tel.png);
+.menu__list_2 {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list-link-tel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu__link-tel {
@@ -329,6 +338,97 @@ body._touch .menu__arrow {
   line-height: 18px;
   text-align: center;
   color: #000000;
+}
+
+.menu__list-tel-img {
+  margin-right: 18px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  padding-left: 0rem;
+}
+
+.menu__button-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ec0f16;
+  border-radius: 5px;
+  width: 220px;
+  height: 48px;
+}
+
+.menu__button-1:hover {
+  background: #cd1319;
+}
+
+.menu__button-1 > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.menu__list-button {
+  display: flex;
+}
+
+.menu__tel {
+  display: flex;
+  align-items: center;
+}
+
+.menu__button-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ec0f16;
+  background: #fff;
+  border-radius: 5px;
+  width: 220px;
+  height: 48px;
+}
+
+.menu__button-2 > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #ec0f16;
+}
+
+.menu__button-2 > p:hover {
+  color: #cd1319;
+}
+
+.menu__list-input {
+  position: relative;
+  width: 427px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.menu__list-input-search {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.menu__list-22 {
+  margin-top: 45px;
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
 }
 
 /*-------- Header End -------*/
@@ -429,6 +529,11 @@ body._touch .menu__arrow {
   .menu__body {
     display: block;
     flex-wrap: wrap;
+    z-index: 2;
+  }
+
+  .menu__list-input {
+    display: none;
   }
 
   .header__logo {
@@ -590,6 +695,44 @@ body._touch .menu__arrow {
 
   .__container {
     margin: 0 15px;
+  }
+
+  .menu__button-1 {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .menu__list-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__tel {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    order: 1;
+  }
+
+  .menu__button-2 {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .menu__list-22 {
+    margin-top: 45px;
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+  }
+
+  .main__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
   }
 }
 @supports (-webkit-appearance:none){
