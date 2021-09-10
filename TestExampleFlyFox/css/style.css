@@ -135,7 +135,6 @@ h6 {
   --header-menu-button-bg-color: #5b6460;
   --header-menu-button-color: #ffffff;
   --header-menu-button-color-hover: #808e88;
-  --header-menu-button-color-active: #79857f;
   --header-menu-arrow-color: #000000;
 }
 
@@ -145,13 +144,23 @@ body._lock {
   overflow: hidden;
 }
 
+::-moz-selection {
+  color: #FFFFFF;
+  background-color: #ec0f16;
+}
+
+::selection {
+  color: #FFFFFF;
+  background-color: #ec0f16;
+}
+
 .header {
   position: static;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  background: linear-gradient(179.39deg, #ffffff 60.71%, #f5f5f5 99.36%);
+  background-color: linear-gradient(179.39deg, #FFFFFF 60.71%, #F5F5F5 99.36%);
   font-family: var(--header-font-family);
 }
 
@@ -307,6 +316,10 @@ body._touch .menu__arrow {
   margin: 0 76px;
 }
 
+body {
+  background: linear-gradient(179.39deg, #ffffff 60.71%, #f5f5f5 99.36%);
+}
+
 .menu__line {
   display: block;
   width: 302px;
@@ -375,6 +388,8 @@ ul {
 
 .menu__list-button {
   display: flex;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
 }
 
 .menu__tel {
@@ -739,6 +754,10 @@ ul {
   .menu__button-2 {
     margin-top: 15px;
     width: 100%;
+  }
+
+  .menu__list-line {
+    display: none;
   }
 
   .menu__list-22 {

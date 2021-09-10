@@ -3,13 +3,17 @@ body._lock {
   overflow: hidden;
 }
 
+::selection{
+  color: #FFFFFF;
+  background-color: #ec0f16;
+}
 .header {
   position: static;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  background: linear-gradient(179.39deg, #ffffff 60.71%, #f5f5f5 99.36%);
+  background-color: linear-gradient(179.39deg, #FFFFFF 60.71%, #F5F5F5 99.36%);
   font-family: var(--header-font-family);
   @media (max-width: 767px) {
     border-bottom: 1px solid #e0e0e0;
