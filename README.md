@@ -8,7 +8,7 @@ Project Name Description
 
 ## Demo
 
-https://pavloseniv.github.io/
+https://pavloseniv.github.io/TestExampleFlyFox/TestExampleFlyFox/index.html
 
 ## Screenshots
 
