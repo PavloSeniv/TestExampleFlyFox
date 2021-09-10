@@ -26,13 +26,65 @@
 /*-------- index End -------*/
 
 /*-------- Page Index Start -------*/
+/*-------- All Start -------*/
+* {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000000;
+}
+/*-------- All End -------*/
 
 /*-------- Header Start -------*/
 .__container {
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 76px;
 }
-
 /*-------- Header End -------*/
+
+.main {
+  margin-top: 76px;
+}
+.main__text {
+}
+.main__subtitle {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  &::after {
+    width: 57px;
+    content: "";
+    height: 1px;
+    background-color: #EC0F16;
+    display: block;
+    margin-top: 18px;
+  }
+}
+.main__title {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 84px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.main__bg {
+  width: 100%;
+}
+.category {
+}
+.category__item_1 {
+}
+.category__item_2 {
+}
+.category__item_3 {
+}
+.category__item_4 {
+}
 
 /*-------- Page Index End -------*/

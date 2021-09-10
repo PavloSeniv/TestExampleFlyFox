@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat-Medium";
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -25,10 +25,10 @@
 }
 
 @font-face {
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -129,14 +129,62 @@ h6 {
 
 /*-------- Page Index Start -------*/
 
+/*-------- All Start -------*/
+
+* {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000000;
+}
+
+/*-------- All End -------*/
+
 /*-------- Header Start -------*/
 
 .__container {
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 76px;
 }
 
 /*-------- Header End -------*/
+
+.main {
+  margin-top: 76px;
+}
+
+.main__subtitle {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.main__subtitle::after {
+  width: 57px;
+  content: "";
+  height: 1px;
+  background-color: #EC0F16;
+  display: block;
+  margin-top: 18px;
+}
+
+.main__title {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 84px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main__bg {
+  width: 100%;
+}
 
 /*-------- Page Index End -------*/
 @supports (-webkit-appearance:none){

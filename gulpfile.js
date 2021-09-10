@@ -16,6 +16,8 @@ let path = {
     pluginsCss: project_folder + "/plugins/",
     pluginsPhp: project_folder + "/plugins/",
     pdf: project_folder + "/pdf/",
+    bootstrap: project_folder + "/bootstrap_5.1.0/",
+
   },
   //Папка із початковими файлами
   src: {
@@ -34,6 +36,7 @@ let path = {
     pluginsCss: source_folder + "/plugins/**/*.css",
     pluginsPhp: source_folder + "/plugins/**/*.php",
     pdf: source_folder + "/pdf/**/*.pdf",
+    bootstrap: source_folder + "/bootstrap_5.1.0/**/*.+(css|js|min.css)",
   },
   //Об'єкт  для слідкування за файлами в реальному часі(browserSync)
   watch: {
@@ -47,6 +50,7 @@ let path = {
     pluginsCss: source_folder + "/plugins/**/*.css",
     pluginsPhp: source_folder + "/plugins/**/*.php",
     pdf: source_folder + "/pdf/**/*.pdf",
+    bootstrap: source_folder + "/bootstrap_5.1.0/**/*.+(css|js|min.css)",
   },
   clean: "./" + project_folder + "/",
 };
@@ -287,6 +291,14 @@ function libsJs(params) {
     .pipe(gulp.dest("#src/plugins/libs"))
     .pipe(browsersync.stream());
 }
+
+
+function bootstrap(params) {
+  return src(path.src.bootstrap)
+    .pipe(dest(path.build.bootstrap))
+    .pipe(browsersync.stream());
+}
+
 //Слідкування за файлами в реальному часі
 function watchFiles(params) {
   gulp.watch([path.watch.html], html); //Для html
@@ -300,6 +312,8 @@ function watchFiles(params) {
   gulp.watch([path.watch.pdf], pdf); // Для plugins .css file
   gulp.watch([path.watch.pdf], libsCss); // Для node_modules .css file
   gulp.watch([path.watch.pdf], libsJs); // Для node_modules .js file
+  gulp.watch([path.watch.pdf], bootstrap); // Для node_modules .js file
+
 }
 
 function clean(params) {
@@ -321,13 +335,15 @@ let build = gulp.series(
     pluginsPhp,
     pdf,
     libsCss,
-    libsJs
+    libsJs,
+    bootstrap
   ),
   fontsStyle
 ); //тут присутній варіант паралельного запису шрифтів та відео
 
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.bootstrap = bootstrap;
 exports.libsJs = libsJs;
 exports.libsCss = libsCss;
 exports.pdf = pdf;
