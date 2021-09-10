@@ -153,7 +153,6 @@ body._lock {
   z-index: 10;
   background: linear-gradient(179.39deg, #ffffff 60.71%, #f5f5f5 99.36%);
   font-family: var(--header-font-family);
-  border-bottom: 1px solid var(--header-bg-color);
 }
 
 .header__container {
@@ -524,6 +523,10 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .header {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
   .header__container {
     margin: 0 15px;
   }
@@ -599,6 +602,7 @@ ul {
 
   .menu__icon._active::after {
     top: 50%;
+    width: 100%;
     transform: rotate(45deg) translate(0px, 50%);
   }
 
@@ -745,12 +749,13 @@ ul {
   }
 
   .main__title {
+    text-align: center;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    color: #000000;
+    color: #000;
   }
 }
 @supports (-webkit-appearance:none){
