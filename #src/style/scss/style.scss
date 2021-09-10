@@ -45,6 +45,9 @@
   width: 302px;
   background: linear-gradient(90.01deg, #d2d2d2 11.47%, #f5f5f5 20.24%, #e2e2e2 32.9%, #c7c5c5 75.27%, #efeded 93.29%);
   height: 2px;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .menu__list_2 {
@@ -149,6 +152,10 @@ ul {
   }
 }
 .menu__input {
+}
+.menu__list-line {
+  display: flex;
+  align-items: center;
 }
 .menu__list-input {
   position: relative;
