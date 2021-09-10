@@ -1,10 +1,10 @@
 :root {
     --header-bg-color: #ffffff;
-    --header-width-container: 1408px;
-    --header-font-family: OpenSans-Light;
-    --header-bg-color-mobile: #5B6460;
+    --header-width-container: 1920px;
+    --header-font-family: Montserrat;
+    --header-bg-color-mobile: #ffffff;
     --header-bg-menu-body-mobile: #ffffff;
-    --header-bg-menu-icon-mobile: #ffffff;
+    --header-bg-menu-icon-mobile: #000000;
     --header-menu-link-color: #000000;
     --header-menu-sub-link-color: #000000;
     --header-menu-button-bg-color: #5b6460;
