@@ -492,10 +492,27 @@ body._touch .menu__arrow {
 .category {
   margin-top: 57.5px;
   display: grid;
+  justify-items: center;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   grid-template-areas: "category__item_1 category__item_2 category__item_3 category__item_4";
+}
+
+.category__item_1 {
+  grid-area: category__item_1;
+}
+
+.category__item_2 {
+  grid-area: category__item_2;
+}
+
+.category__item_3 {
+  grid-area: category__item_3;
+}
+
+.category__item_4 {
+  grid-area: category__item_4;
 }
 
 .category__button {
@@ -542,30 +559,6 @@ body._touch .menu__arrow {
   display: inline-block;
   -webkit-margin-end: 22px;
   margin-inline-end: 22px;
-}
-
-.category__item_1,
-.category__item_2,
-.category__item_3,
-.category__item_4 {
-  display: flex;
-  justify-content: center;
-}
-
-.category__item_1 {
-  grid-area: category__item_1;
-}
-
-.category__item_2 {
-  grid-area: category__item_2;
-}
-
-.category__item_3 {
-  grid-area: category__item_3;
-}
-
-.category__item_4 {
-  grid-area: category__item_4;
 }
 
 /*-------- Page Index End -------*/
