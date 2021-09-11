@@ -139,16 +139,7 @@ body._lock {
   height: 100%;
   width: 100%;
   text-align: left;
-}
-
-@media (min-width: 768px) {
-  .menu__list-link:hover {
-    display: block;
-    content: "";
-    width: 100%;
-    border-top: 2px solid #ec0f16;
-    text-align: center;
-  }
+  padding: 50px 0 0 0;
 }
 
 .menu__list {
@@ -179,6 +170,12 @@ body._lock {
       "menu__list-link-13";
     grid-template-rows: repeat(13, 1fr);
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__list-link:hover {
+    border-top: 2px solid #ec0f16;
   }
 }
 
@@ -231,8 +228,10 @@ body._lock {
 }
 
 .menu__list-link-13 {
+  display: flex;
   grid-area: menu__list-link-13;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__list-link-14 {

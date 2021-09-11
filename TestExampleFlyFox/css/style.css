@@ -231,6 +231,7 @@ body._lock {
   height: 100%;
   width: 100%;
   text-align: left;
+  padding: 50px 0 0 0;
 }
 
 .menu__list {
@@ -292,8 +293,10 @@ body._lock {
 }
 
 .menu__list-link-13 {
+  display: flex;
   grid-area: menu__list-link-13;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__list-link-14 {
@@ -555,11 +558,7 @@ body._lock {
   }
 
   .menu__list-link:hover {
-    display: block;
-    content: "";
-    width: 100%;
     border-top: 2px solid #ec0f16;
-    text-align: center;
   }
 
   .menu__link {
