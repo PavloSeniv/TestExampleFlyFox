@@ -187,6 +187,7 @@ body._lock {
   display: flex;
   justify-content: flex-start;
   min-height: 100px;
+  flex-direction: row;
 }
 
 .header__logo {
@@ -230,7 +231,7 @@ body._lock {
   position: relative;
   height: 100%;
   width: 100%;
-  text-align: left;
+  text-align: center;
   padding: 50px 0 0 0;
 }
 
@@ -290,6 +291,7 @@ body._lock {
 
 .menu__list-link-12 {
   grid-area: menu__list-link-12;
+  text-align: left !important;
 }
 
 .menu__list-link-13 {
@@ -337,7 +339,6 @@ body._lock {
 
 .menu__list-input {
   position: relative;
-  width: 427px;
   padding: 15px 20px;
   border-bottom: 1px solid #000000;
 }
@@ -345,11 +346,12 @@ body._lock {
 .menu__input {
   position: relative;
   left: 20px;
+  top: 15px;
 }
 
 .menu__list-input-search {
   position: absolute;
-  top: 50%;
+  bottom: 5px;
   right: 20px;
   background-color: unset;
 }
@@ -574,6 +576,29 @@ body._lock {
   }
 }
 
+@media (max-width: 1399px) {
+  .header__container {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    justify-content: center;
+  }
+
+  .menu__body {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    justify-content: center;
+  }
+
+  .menu__list {
+    grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5" "menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12" "menu__list-link-13 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-15";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 991px) {
   .main {
     display: grid;
@@ -606,6 +631,7 @@ body._lock {
     margin: 0 15px;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   .header__search {
@@ -619,6 +645,11 @@ body._lock {
 
   .header__search._active {
     display: none;
+  }
+
+  .menu__list > li {
+    padding: 0 0 0 0;
+    text-align: center;
   }
 
   .menu__list {
@@ -648,7 +679,7 @@ body._lock {
   }
 
   .menu__login:hover {
-    color: #333;
+    color: #333 !important;
   }
 
   .menu__sign-up {
@@ -663,7 +694,7 @@ body._lock {
   }
 
   .menu__sign-up:hover {
-    color: #333;
+    color: #333 !important;
   }
 
   .menu__button-1 {
@@ -829,6 +860,14 @@ body._lock {
 }
 
  @media (min-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1399px){
 
 @supports (-webkit-appearance:none){
 

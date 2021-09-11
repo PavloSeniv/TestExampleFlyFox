@@ -75,12 +75,19 @@ body._lock {
   display: flex;
   justify-content: flex-start;
   min-height: 100px;
+  flex-direction: row;
   @media (max-width: 767px) {
     margin: 0 15px;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+
+  }
+  @media (max-width: 1399px) {
+    flex-direction: column;
   }
 }
+
 @media (min-width: 768px) {
   .header__search {
     display: none;
@@ -105,6 +112,9 @@ body._lock {
   z-index: 5;
   display: flex;
   flex: 0 0 auto;
+  @media (max-width: 1399px) {
+    justify-content: center;
+  }
 }
 
 .header__logo._active {
@@ -132,14 +142,24 @@ body._lock {
   display: flex;
   flex-wrap: wrap;
   padding-left: 50px;
+  @media (max-width: 1399px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    justify-content: center;
+  }
 }
 
 .menu__list > li {
   position: relative;
   height: 100%;
   width: 100%;
-  text-align: left;
+  text-align: center;
   padding: 50px 0 0 0;
+  @media (max-width: 767px) {
+    padding: 0 0 0 0;
+    text-align: center;
+  }
 }
 
 .menu__list {
@@ -169,6 +189,22 @@ body._lock {
       "menu__list-link-15"
       "menu__list-link-13";
     grid-template-rows: repeat(13, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 991px) {
+  }
+
+  @media (max-width: 1199px) {
+  }
+
+  @media (max-width: 1399px) {
+    grid-template-areas:
+      "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5"
+      "menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-10 menu__list-link-11"
+      "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12"
+      "menu__list-link-13 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-15";
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
   }
 }
@@ -225,6 +261,7 @@ body._lock {
 
 .menu__list-link-12 {
   grid-area: menu__list-link-12;
+  text-align: left !important;
 }
 
 .menu__list-link-13 {
@@ -275,7 +312,7 @@ body._lock {
     text-transform: uppercase;
     color: #000000;
     &:hover {
-      color: #333;
+      color: #333 !important;
     }
   }
 }
@@ -295,14 +332,13 @@ body._lock {
     text-transform: uppercase;
     color: #000000;
     &:hover {
-      color: #333;
+      color: #333 !important;
     }
   }
 }
 
 .menu__list-input {
   position: relative;
-  width: 427px;
   padding: 15px 20px;
   border-bottom: 1px solid #000000;
 }
@@ -310,10 +346,11 @@ body._lock {
 .menu__input {
   position: relative;
   left: 20px;
+  top: 15px;
 }
 .menu__list-input-search {
   position: absolute;
-  top: 50%;
+  bottom: 5px;
   right: 20px;
   background-color: unset;
   & svg:hover path {
