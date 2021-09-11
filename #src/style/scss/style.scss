@@ -649,15 +649,20 @@ body._touch .menu__arrow {
 }
 
 .category__button {
+  display: block;
   position: relative;
   max-width: 427px;
-  &:nth-last-child(1) {
-  }
-  & .category__title:hover {
-    color: #cd1319;
+  & > .category__title {
+    color: #fff;
+    &:hover {
+      color: #cd1319;
+    }
   }
 }
-
+.category__img {
+  width: 100%;
+  filter: contrast(150%);
+}
 .category__title {
   display: flex;
   position: absolute;
@@ -672,11 +677,7 @@ body._touch .menu__arrow {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2em;
-  color: #fff;
   align-items: center;
-
-  &:hover {
-  }
 
   @media (max-width: 767px) {
     width: 100%;
