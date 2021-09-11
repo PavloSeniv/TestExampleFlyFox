@@ -319,6 +319,9 @@ body._lock {
   &:active {
     color: #bdbdbd !important;
   }
+  &:hover {
+    color: #333333;
+  }
 }
 
 .menu__list-line {
