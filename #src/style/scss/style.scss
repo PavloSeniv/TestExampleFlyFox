@@ -81,10 +81,30 @@ body._lock {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-
   }
   @media (max-width: 1399px) {
     flex-direction: column;
+  }
+}
+
+.header__block-logo {
+  display: flex;
+  flex: 0 0 10%;
+  justify-content: center;
+  @media (max-width: 767px) {
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 100%;
+  }
+  @media (max-width: 1399px) {
+    flex: 0 0 100%;
+  }
+}
+
+.header__block-nav {
+  flex: 0 0 90%;
+  @media (max-width: 1399px) {
+    flex: 0 0 100%;
   }
 }
 
@@ -112,6 +132,7 @@ body._lock {
   z-index: 5;
   display: flex;
   flex: 0 0 auto;
+  align-items: center;
   @media (max-width: 1399px) {
     justify-content: center;
   }
@@ -141,11 +162,9 @@ body._lock {
 .menu__body {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 50px;
   @media (max-width: 1399px) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 50px;
     justify-content: center;
   }
 }
@@ -155,6 +174,7 @@ body._lock {
   height: 100%;
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
   padding: 50px 0 0 0;
   @media (max-width: 767px) {
     padding: 0 0 0 0;
@@ -163,9 +183,9 @@ body._lock {
 }
 
 .menu__list {
+  width: 100%;
   display: grid;
   grid-gap: 14px;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   align-items: center;
   grid-template-areas:
     "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-10 menu__list-link-11"
@@ -203,7 +223,7 @@ body._lock {
       "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5"
       "menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-10 menu__list-link-11"
       "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12"
-      "menu__list-link-13 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-15";
+      "menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-14 menu__list-link-15";
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
   }
@@ -436,6 +456,13 @@ body._lock {
 @media (min-width: 768px) {
   .menu__link {
     height: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
   }
 }
 
@@ -557,7 +584,7 @@ body._lock {
 /*-------- Header End -------*/
 
 .main {
-  margin-top: 76px;
+  margin-top: 30px;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 2fr;

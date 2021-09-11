@@ -190,11 +190,22 @@ body._lock {
   flex-direction: row;
 }
 
+.header__block-logo {
+  display: flex;
+  flex: 0 0 10%;
+  justify-content: center;
+}
+
+.header__block-nav {
+  flex: 0 0 90%;
+}
+
 .header__logo {
   position: relative;
   z-index: 5;
   display: flex;
   flex: 0 0 auto;
+  align-items: center;
 }
 
 .header__logo._active {
@@ -224,7 +235,6 @@ body._lock {
 .menu__body {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 50px;
 }
 
 .menu__list > li {
@@ -232,13 +242,14 @@ body._lock {
   height: 100%;
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
   padding: 50px 0 0 0;
 }
 
 .menu__list {
+  width: 100%;
   display: grid;
   grid-gap: 14px;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   align-items: center;
   grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-15 menu__list-link-15";
   justify-items: center;
@@ -441,7 +452,7 @@ body._lock {
 /*-------- Header End -------*/
 
 .main {
-  margin-top: 76px;
+  margin-top: 30px;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 2fr;
@@ -573,12 +584,26 @@ body._lock {
 
   .menu__link {
     height: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
   }
 }
 
 @media (max-width: 1399px) {
   .header__container {
     flex-direction: column;
+  }
+
+  .header__block-logo {
+    flex: 0 0 100%;
+  }
+
+  .header__block-nav {
+    flex: 0 0 100%;
   }
 
   .header__logo {
@@ -588,12 +613,11 @@ body._lock {
   .menu__body {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 50px;
     justify-content: center;
   }
 
   .menu__list {
-    grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5" "menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12" "menu__list-link-13 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-15";
+    grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5" "menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12" "menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-14 menu__list-link-15";
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
   }
@@ -632,6 +656,12 @@ body._lock {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+  }
+
+  .header__block-logo {
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 100%;
   }
 
   .header__search {
