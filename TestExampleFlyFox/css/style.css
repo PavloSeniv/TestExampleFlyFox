@@ -626,8 +626,8 @@ body._touch .menu__arrow {
     z-index: 5;
     display: block;
     position: relative;
-    width: 30px;
-    height: 18px;
+    width: 18px;
+    height: 12px;
     cursor: pointer;
   }
 
@@ -635,7 +635,7 @@ body._touch .menu__arrow {
   .menu__icon::before {
     left: 0;
     position: absolute;
-    height: 10%;
+    height: 15%;
     width: 100%;
     transition: all 0.3s ease 0s;
     background-color: var(--header-bg-menu-icon-mobile);
@@ -644,7 +644,7 @@ body._touch .menu__arrow {
   .menu__icon::after {
     right: 0;
     position: absolute;
-    height: 10%;
+    height: 15%;
     width: 50%;
     transition: all 0.3s ease 0s;
     background-color: var(--header-bg-menu-icon-mobile);
