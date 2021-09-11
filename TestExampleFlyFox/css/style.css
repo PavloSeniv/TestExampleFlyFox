@@ -251,7 +251,7 @@ body._lock {
   display: grid;
   grid-gap: 14px;
   align-items: center;
-  grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-15 menu__list-link-15";
+  grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-16 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-15 menu__list-link-15";
   justify-items: center;
   align-content: space-between;
 }
@@ -318,6 +318,18 @@ body._lock {
 
 .menu__list-link-15 {
   grid-area: menu__list-link-15;
+}
+
+.menu__list-link-16 {
+  grid-area: menu__list-link-16;
+}
+
+.menu__lang-eng {
+  color: #bdbdbd !important;
+}
+
+.menu__lang-ru:active {
+  color: #bdbdbd !important;
 }
 
 .menu__list-line {
@@ -589,7 +601,6 @@ body._lock {
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
-    color: #000000;
   }
 }
 
@@ -617,9 +628,9 @@ body._lock {
   }
 
   .menu__list {
-    grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5" "menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12" "menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-14 menu__list-link-15";
+    grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-16" "menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12" "menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-14 menu__list-link-14 menu__list-link-15";
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -684,7 +695,7 @@ body._lock {
 
   .menu__list {
     display: grid;
-    grid-template-areas: "menu__list-link-10" "menu__list-link-11" "menu__list-link-1" "menu__list-link-2" "menu__list-link-3" "menu__list-link-4" "menu__list-link-5" "menu__list-link-6" "menu__list-link-7" "menu__list-link-8" "menu__list-link-14" "menu__list-link-15" "menu__list-link-13";
+    grid-template-areas: "menu__list-link-10" "menu__list-link-11" "menu__list-link-1" "menu__list-link-2" "menu__list-link-3" "menu__list-link-4" "menu__list-link-5" "menu__list-link-6" "menu__list-link-7" "menu__list-link-8" "menu__list-link-16" "menu__list-link-14" "menu__list-link-15" "menu__list-link-13";
     grid-template-rows: repeat(13, 1fr);
     grid-template-columns: 1fr;
   }
