@@ -298,8 +298,8 @@ function watchFiles(params) {
   gulp.watch([path.watch.pluginsCss], pluginsCss); // Для plugins .css file
   gulp.watch([path.watch.pluginsPhp], pluginsPhp); // Для plugins .php file
   gulp.watch([path.watch.pdf], pdf); // Для plugins .css file
-  gulp.watch([path.watch.pdf], libsCss); // Для node_modules .css file
-  gulp.watch([path.watch.pdf], libsJs); // Для node_modules .js file
+  //gulp.watch([path.watch.pdf], libsCss); // Для node_modules .css file
+  //gulp.watch([path.watch.pdf], libsJs); // Для node_modules .js file
 }
 
 function clean(params) {
@@ -319,17 +319,17 @@ let build = gulp.series(
     pluginsJs,
     pluginsCss,
     pluginsPhp,
-    pdf,
-    libsCss,
-    libsJs
+    pdf
+    //libsCss,
+    //libsJs
   ),
   fontsStyle
 ); //тут присутній варіант паралельного запису шрифтів та відео
 
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-exports.libsJs = libsJs;
-exports.libsCss = libsCss;
+//exports.libsJs = libsJs;
+//exports.libsCss = libsCss;
 exports.pdf = pdf;
 exports.pluginsPhp = pluginsPhp;
 exports.pluginsCss = pluginsCss;
