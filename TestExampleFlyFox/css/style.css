@@ -452,8 +452,15 @@ body._touch .menu__arrow {
 
 .main {
   margin-top: 76px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  grid-template-areas: "main__text main__bg";
+}
+
+.main__text {
+  grid-area: main__text;
 }
 
 .main__subtitle {
@@ -483,17 +490,25 @@ body._touch .menu__arrow {
   text-transform: uppercase;
 }
 
+.main__bg {
+  grid-area: main__bg;
+}
+
 .main__bg img {
   width: 100%;
 }
 
 .category {
   margin-top: 57.5px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-template-areas: "category__item_1 category__item_2 category__item_3 category__item_4";
 }
 
 .category__button {
   position: relative;
-  margin-bottom: 15px;
   max-width: 427px;
 }
 
@@ -537,6 +552,22 @@ body._touch .menu__arrow {
   justify-content: center;
 }
 
+.category__item_1 {
+  grid-area: category__item_1;
+}
+
+.category__item_2 {
+  grid-area: category__item_2;
+}
+
+.category__item_3 {
+  grid-area: category__item_3;
+}
+
+.category__item_4 {
+  grid-area: category__item_4;
+}
+
 /*-------- Page Index End -------*/
 
 @media (min-width: 768px) {
@@ -548,6 +579,25 @@ body._touch .menu__arrow {
 
   .menu__link {
     height: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    display: grid;
+    grid-template-areas: "main__text" "main__bg";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .main__title {
+    text-align: center;
+  }
+
+  .category {
+    display: grid;
+    grid-template-areas: "category__item_1 category__item_2" "category__item_3 category__item_4";
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -791,6 +841,13 @@ body._touch .menu__arrow {
     color: #000;
   }
 
+  .category {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-areas: "category__item_1" "category__item_2" "category__item_3" "category__item_4";
+    grid-template-columns: 1fr;
+  }
+
   .category__title {
     width: 100%;
     display: flex;
@@ -814,6 +871,14 @@ body._touch .menu__arrow {
 }
 
  @media (min-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 991px){
 
 @supports (-webkit-appearance:none){
 
