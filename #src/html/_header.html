@@ -1,10 +1,13 @@
 <header class="header">
     <div class="header__container">
+        <button class="header__search" type="button">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.867 18 18 14.867 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18ZM19.485 18.071L22.314 20.899L20.899 22.314L18.071 19.485L19.485 18.071Z"
+                    fill="black" />
+            </svg>
+        </button>
         <a class="header__logo" href="index.html">
-            <!--
-            Адаптивні картинки та заміна зображення відповідно медіа запиту(також можлива заміна відносно
-            моделі телефону(Android - header__logo 1x, iPhone - header__logo 2x - залежність від дисплею))
-            -->
             <picture>
                 <source
                     srcset="img/index/header/header_logo_mobile.png, img/index/header/header_logo_mobile.webp, img/index/header/header_logo_mobile.svg"
@@ -14,6 +17,7 @@
                     alt="header_logo_desktop">
             </picture>
         </a>
+        <a class="header__logo-mobile-title" href=" index.html">Menu</a>
         <div class="header__menu menu">
             <div class="menu__icon">
                 <span></span>
@@ -43,7 +47,7 @@
                     </div>
                 </div>
 
-                <div >
+                <div>
                     <div class="menu__list-link-tel">
 
                         <div class="menu__list-button">
