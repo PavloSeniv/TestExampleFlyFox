@@ -243,10 +243,23 @@ body._lock {
 }
 
 .menu__list-line {
+  display: flex;
+  align-items: center;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .menu__line {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90.01deg, #d2d2d2 11.47%, #f5f5f5 20.24%, #e2e2e2 32.9%, #c7c5c5 75.27%, #efeded 93.29%);
+  height: 2px;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
+
 .menu__login {
   color: #ec0f16;
   &:hover {
@@ -288,32 +301,102 @@ body._lock {
 }
 
 .menu__list-input {
-}
-.menu__input {
-}
-.menu__list-input-search {
+  position: relative;
+  width: 427px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #000000;
 }
 
-.menu__tel {
+.menu__input {
+  position: relative;
+  left: 20px;
 }
-.menu__list-tel-img {
+.menu__list-input-search {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  background-color: unset;
+  & svg:hover path {
+    fill: #cd1319;
+  }
+}
+
+.menu__list-link-tel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu__link-tel {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  &:hover {
+    color: #cd1319;
+    & path {
+      fill: #cd1319;
+    }
+  }
+  & svg {
+    margin-inline-end: 19px;
+  }
 }
 
 .menu__button-1 {
-}
-.button__title-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ec0f16;
+  border-radius: 5px;
+  width: 220px;
+  height: 48px;
+  &:hover {
+    background: #cd1319;
+  }
+  & > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 .menu__button-2 {
-}
-.button__title-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ec0f16;
+  background: #fff;
+  border-radius: 5px;
+  width: 220px;
+  height: 48px;
+
+  & > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #ec0f16;
+    &:hover {
+      color: #cd1319;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
-  .menu__list-link {
-  }
-
   .menu__link {
     height: 100%;
   }
@@ -433,113 +516,6 @@ body._lock {
       color: #cd1319;
     }
   }
-}
-/*---------------*/
-
-.menu__line {
-  display: block;
-  width: 100%;
-  background: linear-gradient(90.01deg, #d2d2d2 11.47%, #f5f5f5 20.24%, #e2e2e2 32.9%, #c7c5c5 75.27%, #efeded 93.29%);
-  height: 2px;
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-
-.menu__list-link-tel {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu__link-tel {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
-  text-align: center;
-  color: #000000;
-  &:hover {
-    color: #cd1319;
-    & path {
-      fill: #cd1319;
-    }
-  }
-  & svg {
-    margin-inline-end: 19px;
-  }
-}
-
-.menu__button-1 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #ec0f16;
-  border-radius: 5px;
-  width: 220px;
-  height: 48px;
-  &:hover {
-    background: #cd1319;
-  }
-  & > p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #fff;
-  }
-  @media (max-width: 767px) {
-    width: 100%;
-  }
-}
-.menu__button-2 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ec0f16;
-  background: #fff;
-  border-radius: 5px;
-  width: 220px;
-  height: 48px;
-
-  & > p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #ec0f16;
-    &:hover {
-      color: #cd1319;
-    }
-  }
-  @media (max-width: 767px) {
-    width: 100%;
-  }
-}
-.menu__input {
-}
-
-.menu__list-line {
-  display: flex;
-  align-items: center;
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-.menu__list-input {
-  position: relative;
-  width: 427px;
-  padding: 15px 20px;
-  border-bottom: 1px solid #000000;
-}
-.menu__list-input-search {
-  position: absolute;
-  top: 12px;
-  right: 20px;
 }
 /*-------- Header End -------*/
 
