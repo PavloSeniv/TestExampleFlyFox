@@ -138,7 +138,7 @@ body._lock {
   position: relative;
   height: 100%;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -155,9 +155,10 @@ body._lock {
   display: grid;
   grid-gap: 14px;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
   align-items: center;
-  grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-10 menu__list-link-11";
+  grid-template-areas:
+    "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-10 menu__list-link-11"
+    "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-15 menu__list-link-15";
   justify-items: center;
   align-content: space-between;
   @media (max-width: 767px) {
@@ -176,7 +177,6 @@ body._lock {
       "menu__list-link-14"
       "menu__list-link-15"
       "menu__list-link-13";
-
     grid-template-rows: repeat(13, 1fr);
     grid-template-columns: 1fr;
   }
@@ -232,6 +232,7 @@ body._lock {
 
 .menu__list-link-13 {
   grid-area: menu__list-link-13;
+  text-align: left;
 }
 
 .menu__list-link-14 {
