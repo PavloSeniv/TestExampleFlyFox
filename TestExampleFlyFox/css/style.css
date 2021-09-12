@@ -249,10 +249,10 @@ body._lock {
 .menu__list {
   width: 100%;
   display: grid;
-  grid-gap: 14px;
+  grid-gap: 24px;
   align-items: center;
   grid-template-areas: "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-16 menu__list-link-10 menu__list-link-11" "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-15 menu__list-link-15";
-  justify-items: center;
+  justify-items: start;
   align-content: space-between;
 }
 
@@ -309,19 +309,25 @@ body._lock {
   display: flex;
   grid-area: menu__list-link-13;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .menu__list-link-14 {
   grid-area: menu__list-link-14;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menu__list-link-15 {
+  display: flex;
   grid-area: menu__list-link-15;
+  justify-content: flex-end;
 }
 
 .menu__list-link-16 {
+  display: flex;
   grid-area: menu__list-link-16;
+  justify-content: flex-end;
 }
 
 .menu__lang-eng {
@@ -337,8 +343,9 @@ body._lock {
 }
 
 .menu__list-line {
-  display: flex;
-  align-items: center;
+  position: relative;
+  display: block;
+  top: 10px;
 }
 
 .menu__line {
@@ -367,7 +374,8 @@ body._lock {
 .menu__list-input {
   position: relative;
   padding: 15px 20px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
+  width: 427px !important;
 }
 
 .menu__input {
@@ -631,8 +639,22 @@ body._lock {
   }
 }
 
+@media (max-width: 1700px) {
+  .menu__line {
+    display: none;
+  }
+}
+
 @media (max-width: 1550px) {
   .menu__line {
+    display: none;
+  }
+
+  .menu__button-1 {
+    width: 150px;
+  }
+
+  .menu__button-2 {
     width: 150px;
   }
 }
@@ -672,12 +694,40 @@ body._lock {
     padding: 24px 0;
   }
 
+  .menu__list-link-13 {
+    justify-content: center;
+  }
+
+  .menu__list-link-14 {
+    justify-content: center;
+  }
+
+  .menu__list-link-15 {
+    justify-content: center;
+  }
+
+  .menu__list-link-16 {
+    justify-content: center;
+  }
+
   .menu__line {
     display: none;
   }
 
+  .menu__list-input {
+    width: 100% !important;
+  }
+
   .menu__input {
     width: 93%;
+  }
+
+  .menu__button-1 {
+    width: 220px;
+  }
+
+  .menu__button-2 {
+    width: 220px;
   }
 }
 
@@ -955,6 +1005,14 @@ body._lock {
 }
 
  @media (min-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1700px){
 
 @supports (-webkit-appearance:none){
 

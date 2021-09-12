@@ -191,12 +191,12 @@ body._lock {
 .menu__list {
   width: 100%;
   display: grid;
-  grid-gap: 14px;
+  grid-gap: 24px;
   align-items: center;
   grid-template-areas:
     "menu__list-link-1 menu__list-link-2 menu__list-link-3 menu__list-link-4 menu__list-link-5 menu__list-link-6 menu__list-link-7 menu__list-link-8 menu__list-link-9 menu__list-link-16 menu__list-link-10 menu__list-link-11"
     "menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-12 menu__list-link-13 menu__list-link-13 menu__list-link-14 menu__list-link-14 menu__list-link-15 menu__list-link-15";
-  justify-items: center;
+  justify-items: start;
   align-content: space-between;
   @media (max-width: 767px) {
     display: grid;
@@ -296,19 +296,37 @@ body._lock {
   display: flex;
   grid-area: menu__list-link-13;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  @media (max-width: 1399px) {
+    justify-content: center;
+  }
 }
 
 .menu__list-link-14 {
   grid-area: menu__list-link-14;
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: 1399px) {
+    justify-content: center;
+  }
 }
 
 .menu__list-link-15 {
+  display: flex;
   grid-area: menu__list-link-15;
+  justify-content: flex-end;
+  @media (max-width: 1399px) {
+    justify-content: center;
+  }
 }
 
 .menu__list-link-16 {
+  display: flex;
   grid-area: menu__list-link-16;
+  justify-content: flex-end;
+  @media (max-width: 1399px) {
+    justify-content: center;
+  }
 }
 
 .menu__lang-eng {
@@ -325,8 +343,9 @@ body._lock {
 }
 
 .menu__list-line {
-  display: flex;
-  align-items: center;
+  position: relative;
+  display: block;
+  top: 10px;
   @media (max-width: 767px) {
     display: none;
   }
@@ -340,10 +359,13 @@ body._lock {
   @media (max-width: 767px) {
     display: none;
   }
-  @media (max-width: 1550px) {
-    width: 150px;
-  }
   @media (max-width: 1399px) {
+    display: none;
+  }
+  @media (max-width: 1550px) {
+    display: none;
+  }
+  @media (max-width: 1700px) {
     display: none;
   }
 }
@@ -391,7 +413,11 @@ body._lock {
 .menu__list-input {
   position: relative;
   padding: 15px 20px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
+  width: 427px !important;
+  @media (max-width: 1399px) {
+    width: 100% !important;
+  }
 }
 
 .menu__input {
@@ -466,6 +492,12 @@ body._lock {
   @media (max-width: 767px) {
     width: 100%;
   }
+  @media (max-width: 1399px) {
+    width: 220px;
+  }
+  @media (max-width: 1550px) {
+    width: 150px;
+  }
 }
 .menu__button-2 {
   display: inline-flex;
@@ -490,6 +522,12 @@ body._lock {
 
   @media (max-width: 767px) {
     width: 100%;
+  }
+  @media (max-width: 1399px) {
+    width: 220px;
+  }
+  @media (max-width: 1550px) {
+    width: 150px;
   }
 }
 
