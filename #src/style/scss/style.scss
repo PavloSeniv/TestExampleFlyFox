@@ -685,7 +685,7 @@ body._lock {
   }
 
   @media (max-width: 575px) {
-    margin-top: 110px;
+    margin-top: 135px;
   }
 
   @media (max-width: 767px) {
@@ -706,6 +706,7 @@ body._lock {
 }
 
 .main__subtitle {
+  font-family: Montserrat;
   font-weight: 500;
   font-size: 17px;
   line-height: 21px;
@@ -718,6 +719,14 @@ body._lock {
     background-color: #ec0f16;
     display: block;
     margin-top: 18px;
+
+    @media (max-width: 767px) {
+      width: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -729,6 +738,11 @@ body._lock {
   line-height: 84px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (max-width: 575px) {
+    text-align: left;
+    font-size: 21px;
+  }
   @media (max-width: 767px) {
     text-align: center;
     font-family: Montserrat;
@@ -741,6 +755,15 @@ body._lock {
   @media (max-width: 991px) {
     text-align: center;
   }
+  @media (max-width: 1199px) {
+    font-size: 35px;
+    line-height: 55px;
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
 }
 .main__bg {
   grid-area: main__bg;
@@ -752,6 +775,7 @@ body._lock {
 
 .category {
   margin-top: 57.5px;
+  padding-bottom: 201px;
   display: grid;
   justify-items: center;
   grid-gap: 20px;
@@ -767,6 +791,7 @@ body._lock {
   }
 
   @media (max-width: 767px) {
+    padding-bottom: 54px;
     display: grid;
     grid-gap: 12px;
     grid-template-areas:
