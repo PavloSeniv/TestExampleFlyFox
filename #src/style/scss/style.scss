@@ -402,6 +402,14 @@ body._lock {
   @media (max-width: 1399px) {
     width: 93%;
   }
+  &::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #828282;
+  }
 }
 .menu__list-input-search {
   position: absolute;
@@ -445,17 +453,15 @@ body._lock {
   border-radius: 5px;
   width: 220px;
   height: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
   &:hover {
     background: #cd1319;
-  }
-  & > p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #fff;
   }
   @media (max-width: 767px) {
     width: 100%;
@@ -470,19 +476,18 @@ body._lock {
   border-radius: 5px;
   width: 220px;
   height: 48px;
-
-  & > p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #ec0f16;
-    &:hover {
-      color: #cd1319;
-    }
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #ec0f16;
+  &:hover {
+    border: 1px solid #cd1319;
+    color: #cd1319;
   }
+
   @media (max-width: 767px) {
     width: 100%;
   }
