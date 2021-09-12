@@ -374,6 +374,7 @@ body._lock {
   position: relative;
   left: 20px;
   top: 15px;
+  width: 85%;
 }
 
 .menu__list-input-search {
@@ -651,6 +652,10 @@ body._lock {
 
   .menu__line {
     display: none;
+  }
+
+  .menu__input {
+    width: 93%;
   }
 }
 

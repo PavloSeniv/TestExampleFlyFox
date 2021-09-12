@@ -398,6 +398,10 @@ body._lock {
   position: relative;
   left: 20px;
   top: 15px;
+  width: 85%;
+  @media (max-width: 1399px) {
+    width: 93%;
+  }
 }
 .menu__list-input-search {
   position: absolute;
