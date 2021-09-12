@@ -228,8 +228,10 @@ body._lock {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
   z-index: 5;
+  position: relative;
+  top: -22px;
 }
 
 .menu__icon {
@@ -892,6 +894,16 @@ body._lock {
     cursor: pointer;
   }
 
+  .menu__icon._active {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 12px;
+    cursor: pointer;
+    top: -22px;
+  }
+
   .menu__icon span,
   .menu__icon::before {
     left: 0;
@@ -921,7 +933,7 @@ body._lock {
   }
 
   .menu__icon span {
-    top: 50%;
+    top: 60%;
     transform: scale(1) translate(0px, -50%);
   }
 
@@ -935,13 +947,13 @@ body._lock {
 
   .menu__icon._active::before {
     top: 50%;
-    transform: rotate(-45deg) translate(0px, -50%);
+    transform: rotate(-45deg) translate(0, 0%);
   }
 
   .menu__icon._active::after {
     top: 50%;
     width: 100%;
-    transform: rotate(45deg) translate(0px, 50%);
+    transform: rotate(45deg) translate(0, 0%);
   }
 
   .menu__body {
@@ -970,7 +982,7 @@ body._lock {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 54px;
     background-color: var(--header-bg-color-mobile);
     z-index: 2;
   }
