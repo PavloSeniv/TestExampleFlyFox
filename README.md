@@ -12,7 +12,7 @@ https://pavloseniv.github.io/TestExampleFlyFox/TestExampleFlyFox/index.html
 
 ## Screenshots
 
-![App Screenshot](https://pavloseniv.github.io/TestExampleFlyFox/TestExampleFlyFox/index.html/468x300?text=App+Screenshot+Here)
+![app_photo](https://user-images.githubusercontent.com/71393825/132996883-df7b5af4-a42b-4e6e-89ac-93a759d495d3.PNG/468x300?text=App+Screenshot+Here)
 
 ## Run Locally
 
@@ -39,5 +39,3 @@ Start the gulp
 ```bash
   gulp
 ```
-
-  
