@@ -60,18 +60,19 @@ let { src, dest } = require("gulp"),
   scss = require("gulp-sass"),
   autoprefixer = require("gulp-autoprefixer"),
   group_media = require("gulp-group-css-media-queries"), // Для збирання всіх медіа запитів в кінець файлу
-  clean_css = require("gulp-clean-css"), //Очищення та зжимання css файлу
-  rename = require("gulp-rename"), //Для перейменування css файлу(переважно .min.css)
-  uglify = require("gulp-uglify-es").default, //Оптимізація js
-  imagemin = require("gulp-imagemin"), //Оптимізація зображень
-  webp = require("gulp-webp"), //Для перетворення зображень у формат webp
-  webphtml = require("gulp-webp-html"), //Інтеграція webp в html
-  webpcss2 = require("gulp-webp-css"), //Інтеграція webp в css(правильний варіант)
-  svgSprite = require("gulp-svg-sprite"), //Створення svg спрайтів
-  ttf2woff = require("gulp-ttf2woff"), //Конвертація шрифтів
-  ttf2woff2 = require("gulp-ttf2woff2"), //Конвертація шрифтів
-  fonter = require("gulp-fonter"), //Конвертація шрифтів з otf формату
+  clean_css = require("gulp-clean-css"), // Очищення та зжимання css файлу
+  rename = require("gulp-rename"), // Для перейменування css файлу(переважно .min.css)
+  uglify = require("gulp-uglify-es").default, // Оптимізація js
+  imagemin = require("gulp-imagemin"), // Оптимізація зображень
+  webp = require("gulp-webp"), // Для перетворення зображень у формат webp
+  webphtml = require("gulp-webp-html"), // Інтеграція webp в html
+  webpcss2 = require("gulp-webp-css"), // Інтеграція webp в css(правильний варіант)
+  svgSprite = require("gulp-svg-sprite"), // Створення svg спрайтів
+  ttf2woff = require("gulp-ttf2woff"), // Конвертація шрифтів
+  ttf2woff2 = require("gulp-ttf2woff2"), // Конвертація шрифтів
+  fonter = require("gulp-fonter"), // Конвертація шрифтів з otf формату
   concat = require("gulp-concat"); // Об'єдання файлів
+  //uncss = require("gulp-uncss"); // Видалення невикористаних правил css
 
 //Функція для плагіна browserSync
 function browserSync(params) {
@@ -112,6 +113,11 @@ function css() {
       )
       .pipe(group_media())
       .pipe(webpcss2())
+      // .pipe(
+      //   uncss({
+      //     html: ["index.html", "/**/*.html"],
+      //   })
+      // )
       .pipe(dest(path.build.css))
       .pipe(clean_css())
       .pipe(
@@ -287,6 +293,7 @@ function libsJs(params) {
     .pipe(gulp.dest("#src/plugins/libs"))
     .pipe(browsersync.stream());
 }
+
 //Слідкування за файлами в реальному часі
 function watchFiles(params) {
   gulp.watch([path.watch.html], html); //Для html
