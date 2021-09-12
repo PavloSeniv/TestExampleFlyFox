@@ -58,7 +58,7 @@ body._lock {
 }
 
 .header {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   width: 100%;
@@ -69,6 +69,7 @@ body._lock {
 
   @media (max-width: 767px) {
     border-bottom: 1px solid #e0e0e0;
+    position: fixed;
   }
 
   @media (max-width: 1399px) {
@@ -673,12 +674,23 @@ body._lock {
 /*-------- Header End -------*/
 
 .main {
-  margin-top: 30px;
+  margin-top: 76px;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 2fr;
   align-items: center;
   grid-template-areas: "main__text main__bg";
+  @media (max-width: 320px) {
+    margin-top: 135px;
+  }
+
+  @media (max-width: 575px) {
+    margin-top: 110px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 80px;
+  }
   @media (max-width: 991px) {
     display: grid;
     grid-template-areas:
