@@ -238,7 +238,13 @@ body._lock {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1399px) {
+  .menu__list-link > .menu__link:hover {
+    color: #cd1319;
+  }
+}
+
+@media (min-width: 1400px) {
   .menu__list-link:hover {
     box-shadow: inset 0 4px 0 0 #ec0f16;
   }
