@@ -327,8 +327,6 @@ body._lock {
 }
 
 .menu__list-link-13 {
-  left: 178px;
-  position: relative;
   display: flex;
   grid-area: menu__list-link-13;
   align-items: center;
@@ -337,7 +335,6 @@ body._lock {
     justify-content: center;
   }
   @media (max-width: 1700px) {
-    left: unset;
   }
 }
 
@@ -870,7 +867,6 @@ body._lock {
     }
   }
 }
-
 .category__bg-dark {
   position: absolute;
   top: 0;
@@ -885,6 +881,10 @@ body._lock {
 
 .category__img {
   width: 100%;
+  transform: scale(1);
+  &:hover {
+    transform: scale(2);
+  }
 }
 
 .category__title {

@@ -312,8 +312,6 @@ body._lock {
 }
 
 .menu__list-link-13 {
-  left: 178px;
-  position: relative;
   display: flex;
   grid-area: menu__list-link-13;
   align-items: center;
@@ -610,6 +608,11 @@ body._lock {
 
 .category__img {
   width: 100%;
+  transform: scale(1);
+}
+
+.category__img:hover {
+  transform: scale(2);
 }
 
 .category__title {
@@ -663,10 +666,6 @@ body._lock {
 }
 
 @media (max-width: 1700px) {
-  .menu__list-link-13 {
-    left: unset;
-  }
-
   .menu__line {
     display: none;
   }
