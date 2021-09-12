@@ -1,6 +1,6 @@
-# Project Name(Gulp__Build)
+# TestExampleFlyFox
 
-Project Name Description
+Test task from Fly Fox
 
 ## Authors
 
@@ -19,7 +19,7 @@ https://pavloseniv.github.io/TestExampleFlyFox/TestExampleFlyFox/index.html
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://pavloseniv.github.io/TestExampleFlyFox/TestExampleFlyFox/index.html
 ```
 
 Go to the project directory
