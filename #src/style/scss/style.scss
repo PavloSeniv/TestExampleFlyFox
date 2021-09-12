@@ -327,12 +327,17 @@ body._lock {
 }
 
 .menu__list-link-13 {
+  left: 165px;
+  position: relative;
   display: flex;
   grid-area: menu__list-link-13;
   align-items: center;
   justify-content: flex-end;
   @media (max-width: 1399px) {
     justify-content: center;
+  }
+  @media (max-width: 1700px) {
+    left: unset;
   }
 }
 

@@ -312,6 +312,8 @@ body._lock {
 }
 
 .menu__list-link-13 {
+  left: 165px;
+  position: relative;
   display: flex;
   grid-area: menu__list-link-13;
   align-items: center;
@@ -661,6 +663,10 @@ body._lock {
 }
 
 @media (max-width: 1700px) {
+  .menu__list-link-13 {
+    left: unset;
+  }
+
   .menu__line {
     display: none;
   }
