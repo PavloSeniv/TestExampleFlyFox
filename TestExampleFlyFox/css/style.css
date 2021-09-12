@@ -523,6 +523,7 @@ body._lock {
 /*-------- Header End -------*/
 
 .main {
+  overflow: hidden;
   margin-top: 76px;
   display: grid;
   grid-gap: 5px;
@@ -573,6 +574,7 @@ body._lock {
 }
 
 .category {
+  overflow: hidden;
   margin-top: 57.5px;
   padding-bottom: 201px;
   display: grid;
