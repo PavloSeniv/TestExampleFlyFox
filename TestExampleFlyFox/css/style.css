@@ -212,6 +212,10 @@ body._lock {
   justify-content: center;
 }
 
+.header__logo img {
+  pointer-events: none;
+}
+
 .header__logo._active {
   display: none;
 }
@@ -550,6 +554,7 @@ body._lock {
 }
 
 .main__bg img {
+  pointer-events: none;
   width: 100%;
 }
 

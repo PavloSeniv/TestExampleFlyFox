@@ -149,6 +149,9 @@ body._lock {
   @media (max-width: 1399px) {
     justify-content: center;
   }
+  & img {
+    pointer-events: none;
+  }
 }
 
 .header__logo._active {
@@ -805,6 +808,7 @@ body._lock {
   grid-area: main__bg;
 
   & img {
+    pointer-events: none;
     width: 100%;
   }
 }
