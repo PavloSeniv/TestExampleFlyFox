@@ -602,8 +602,6 @@ body._lock {
 }
 
 .category__button {
-  display: block;
-  position: relative;
   max-width: 427px;
 }
 
@@ -611,8 +609,20 @@ body._lock {
   color: #fff;
 }
 
-.category__button > .category__title:hover {
-  color: #cd1319;
+.category__button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background: #000;
+  line-height: 0;
+}
+
+.category__button img {
+  transition: all 0.5s ease 0s;
+}
+
+.category__button:hover img {
+  transform: scale(1.2) rotate(10deg);
 }
 
 .category__bg-dark {
@@ -629,11 +639,6 @@ body._lock {
 
 .category__img {
   width: 100%;
-  transform: scale(1);
-}
-
-.category__img:hover {
-  transform: scale(2);
 }
 
 .category__title {
