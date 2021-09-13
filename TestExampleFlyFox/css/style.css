@@ -169,6 +169,30 @@ body {
 
 /*-------- All End -------*/
 
+/*-------- Bootstrap Fix Bag Start -------*/
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+a {
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+}
+
+/*-------- Bootstrap Fix Bag End -------*/
+
 /*-------- Header Start -------*/
 
 :root {
@@ -395,6 +419,10 @@ body._lock {
   grid-area: menu__list-input-tablet;
 }
 
+.menu__list-input-tablet svg:hover path {
+  fill: #cd1319;
+}
+
 .menu__input {
   position: relative;
   left: 20px;
@@ -438,6 +466,14 @@ body._lock {
 
 .menu__list-input-search svg:hover path {
   fill: #cd1319;
+}
+
+.modal .menu__input {
+  top: 0;
+}
+
+.modal .menu__input .btn-primary {
+  background-color: #cd1319;
 }
 
 .menu__link-tel {
@@ -727,6 +763,17 @@ body._lock {
 @media (max-width: 1700px) {
   .menu__line {
     display: none;
+  }
+}
+
+@media (max-width: 1699px) {
+  .main__photo-auto-1 {
+    top: 10%;
+  }
+
+  .main__photo-auto-2 {
+    top: 10%;
+    left: 40%;
   }
 }
 
@@ -1152,13 +1199,13 @@ body._lock {
     position: absolute;
     right: 100px;
     z-index: 2;
-    top: 30px;
+    top: 10%;
   }
 
   .main__photo-auto-2 {
     position: absolute;
     z-index: 3;
-    top: 30px;
+    top: 10%;
     left: 45%;
   }
 
@@ -1256,6 +1303,14 @@ body._lock {
 }
 
  @media (max-width: 1700px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1699px){
 
 @supports (-webkit-appearance:none){
 

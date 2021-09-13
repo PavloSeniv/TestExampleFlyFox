@@ -64,6 +64,26 @@ body {
 
 /*-------- All End -------*/
 
+/*-------- Bootstrap Fix Bag Start -------*/
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ol,
+ul {
+  padding-left: 0;
+}
+
+a {
+  color: unset;
+}
+a:hover {
+  color: unset;
+}
+/*-------- Bootstrap Fix Bag End -------*/
+
 /*-------- Header Start -------*/
 :root {
   --header-bg-color: #ffffff;
@@ -483,6 +503,9 @@ body._lock {
     display: block;
     width: 100%;
   }
+  & svg:hover path {
+    fill: #cd1319;
+  }
 }
 
 .menu__input {
@@ -509,6 +532,14 @@ body._lock {
   background-color: unset;
   & svg:hover path {
     fill: #cd1319;
+  }
+}
+
+.modal .menu__input {
+  top: 0;
+
+  .btn-primary {
+    background-color: #cd1319;
   }
 }
 
@@ -878,9 +909,13 @@ body._lock {
     position: absolute;
     right: 100px;
     z-index: 2;
-    top: 30px;
+    top: 10%;
+  }
+  @media (max-width: 1699px) {
+    top: 10%;
   }
 }
+
 .main__photo-auto-2 {
   position: absolute;
   z-index: 3;
@@ -891,8 +926,13 @@ body._lock {
   @media (max-width: 767px) {
     position: absolute;
     z-index: 3;
-    top: 30px;
+    top: 10%;
     left: 45%;
+  }
+
+  @media (max-width: 1699px) {
+    top: 10%;
+    left: 40%;
   }
 }
 
