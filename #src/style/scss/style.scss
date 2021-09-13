@@ -829,10 +829,28 @@ body._lock {
   }
 }
 .main__bg {
+  height: 460px;
   grid-area: main__bg;
-
+  position: relative;
   & img {
     pointer-events: none;
+    width: 100%;
+  }
+}
+
+.main__photo-auto-1 {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  & img{
+    width: 100%;
+  }
+}
+.main__photo-auto-2 {
+  position: absolute;
+  z-index: 3;
+  left: 37%;
+  & img{
     width: 100%;
   }
 }
