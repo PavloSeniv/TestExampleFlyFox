@@ -1,6 +1,6 @@
-# Project Name(Gulp__Build)
+# TestExampleFlyFox
 
-Project Name Description
+Test task from Fly Fox
 
 ## Authors
 
@@ -12,14 +12,14 @@ https://pavloseniv.github.io/TestExampleFlyFox/TestExampleFlyFox/index.html
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![app_photo](https://user-images.githubusercontent.com/71393825/132996883-df7b5af4-a42b-4e6e-89ac-93a759d495d3.PNG)
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://pavloseniv.github.io/TestExampleFlyFox/TestExampleFlyFox/index.html
 ```
 
 Go to the project directory
@@ -39,5 +39,3 @@ Start the gulp
 ```bash
   gulp
 ```
-
-  
