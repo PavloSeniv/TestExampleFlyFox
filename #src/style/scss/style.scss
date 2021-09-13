@@ -208,10 +208,18 @@ body._lock {
       "menu__nav menu__nav menu__nav menu__list-link-lang"
       "menu__contact  menu__list-link-login menu__list-link-log-up menu__list-input-tablet";
   }
+  @media (max-width: 1919px) {
+    grid-template-areas:
+      "menu__nav menu__list-link-lang menu__list-link-lang menu__list-link-login menu__list-link-log-up"
+      "menu__list-input menu__contact menu__contact menu__contact menu__contact";
+  }
 }
 
 .menu__nav {
   grid-area: menu__nav;
+  @media (max-width: 1399px) {
+    width: 100%;
+  }
   @media (max-width: 767px) {
     width: 100%;
   }
@@ -246,7 +254,12 @@ body._lock {
     row-gap: 18px;
   }
   @media (max-width: 1399px) {
-    column-gap: 10px;
+    column-gap: 5px;
+    justify-content: space-between;
+  }
+  @media (max-width: 1919px) {
+    column-gap: 20px;
+    justify-content: space-between;
   }
 }
 
@@ -274,6 +287,9 @@ body._lock {
     display: none;
   }
   @media (max-width: 1399px) {
+    display: none;
+  }
+  @media (max-width: 1919px) {
     display: none;
   }
 }
@@ -457,6 +473,7 @@ body._lock {
 }
 
 .menu__list-input-tablet {
+  background-color: unset;
   display: none;
   grid-area: menu__list-input-tablet;
   @media (max-width: 767px) {
@@ -464,6 +481,7 @@ body._lock {
   }
   @media (max-width: 1399px) {
     display: block;
+    width: 100%;
   }
 }
 
@@ -511,6 +529,12 @@ body._lock {
   & svg {
     margin-inline-end: 19px;
   }
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 10px;
+  }
+  @media (min-width: 992px) and (max-width: 1499px) {
+    font-size: 11px;
+  }
 }
 
 .menu__button-1 {
@@ -535,7 +559,13 @@ body._lock {
     width: 100%;
   }
   @media (max-width: 1399px) {
-    width: 150px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 1919px) {
+    width: 100%;
+    padding: 0 20px;
   }
 }
 .menu__button-2 {
@@ -563,17 +593,29 @@ body._lock {
     width: 100%;
   }
   @media (max-width: 1399px) {
-    width: 150px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 1919px) {
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
-@media (min-width: 768px) {
-  .menu__link {
+.menu__link {
+  @media (min-width: 768px) {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
+  }
+  @media (min-width: 768px) and (max-width: 1399px) {
+    font-size: 12px;
+  }
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    font-size: 12px;
   }
 }
 
