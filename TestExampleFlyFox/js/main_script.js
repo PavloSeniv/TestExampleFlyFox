@@ -118,6 +118,13 @@ if (menuLinks.length > 0) {
 }
 
 
+var mainSceneAuto = document.getElementById("main__scene-auto");
+var parallax = new Parallax(mainSceneAuto, {
+  hoverOnly: true,
+  relativeInput: true,
+});
+
+
 // $(function(){
 
 // });

@@ -2,6 +2,8 @@
 
 @@include('_header_menu_burger.js')
 
+@@include('_parallax_init.js')
+
 // $(function(){
 
 // });
