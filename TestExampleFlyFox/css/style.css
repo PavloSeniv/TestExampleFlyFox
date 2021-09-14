@@ -594,6 +594,7 @@ body._lock {
 .main__photo-auto-1 {
   position: absolute !important;
   top: 60px !important;
+  width: 50%;
 }
 
 .main__photo-auto-2 {
@@ -749,6 +750,12 @@ body._lock {
   }
 }
 
+@media (max-width: 1699px) {
+  .main__bg {
+    height: 500px;
+  }
+}
+
 @media (max-width: 1550px) {
   .menu__line {
     display: none;
@@ -852,20 +859,34 @@ body._lock {
 }
 
 @media (max-width: 1199px) {
+  .main {
+    display: grid;
+    grid-template-areas: "main__text" "main__bg";
+    grid-template-rows: 225px 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .main__title {
     font-size: 35px;
     line-height: 55px;
   }
+
+  .main__bg {
+    height: 400px;
+  }
+
+  .main__photo-auto-1 {
+    top: 0 !important;
+    width: 50%;
+  }
+
+  .main__photo-auto-2 {
+    left: 360px !important;
+    top: 50px !important;
+  }
 }
 
 @media (max-width: 991px) {
-  .main {
-    display: grid;
-    grid-template-areas: "main__text" "main__bg";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-  }
-
   .main__title {
     text-align: center;
   }
@@ -1162,6 +1183,19 @@ body._lock {
     color: #000;
   }
 
+  .main__bg {
+    height: 200px;
+  }
+
+  .main__photo-auto-1 {
+    top: 30px !important;
+  }
+
+  .main__photo-auto-2 {
+    left: 270px !important;
+    top: 30px !important;
+  }
+
   .category {
     margin-top: 5px;
     padding-bottom: 54px;
@@ -1203,6 +1237,26 @@ body._lock {
   .main__title {
     text-align: left;
     font-size: 21px;
+  }
+
+  .main__bg {
+    height: 150px;
+  }
+
+  .main__photo-auto-1 {
+    left: 20px !important;
+  }
+
+  .main__photo-auto-2 {
+    left: 210px !important;
+    top: 30px !important;
+  }
+}
+
+@media (max-width: 435px) {
+  .main__photo-auto-2 {
+    left: 150px !important;
+    top: 30px !important;
   }
 }
 
@@ -1263,6 +1317,14 @@ body._lock {
 
 }
 
+ @media (max-width: 1699px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 1550px){
 
 @supports (-webkit-appearance:none){
@@ -1304,6 +1366,14 @@ body._lock {
 }
 
  @media (max-width: 575px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 435px){
 
 @supports (-webkit-appearance:none){
 
