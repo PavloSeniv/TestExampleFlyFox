@@ -804,12 +804,14 @@ body._lock {
   grid-template-areas: "main__text main__bg";
 
   @media (max-width: 320px) {
+    grid-template-rows: 1fr 1fr;
   }
 
   @media (max-width: 575px) {
   }
 
   @media (max-width: 767px) {
+    grid-gap: 0px;
     margin-top: 135px;
     grid-template-rows: 114px 1fr;
   }
@@ -818,7 +820,7 @@ body._lock {
     grid-template-areas:
       "main__text"
       "main__bg";
-    grid-template-rows: 225px 1fr;
+    grid-template-rows: 170px 1fr;
     grid-template-columns: 1fr;
   }
 }
@@ -1018,6 +1020,7 @@ body._lock {
 
 .main__photo-auto-1 {
   position: absolute !important;
+  left: 60px !important;
   width: 50%;
   @media (max-width: 575px) {
     top: 10px !important;
@@ -1025,12 +1028,13 @@ body._lock {
   }
 
   @media (max-width: 767px) {
+    left: 20px !important;
   }
 
   @media (max-width: 1199px) {
     top: 0 !important;
     width: 50%;
-    left: 40px;
+    left: 40px !important;
   }
 }
 
