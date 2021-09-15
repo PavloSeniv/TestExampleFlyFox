@@ -140,11 +140,13 @@ body._lock {
 
 .header__block-logo {
   display: flex;
+  padding: 22px 0 0 0;
   justify-content: center;
   @media (max-width: 991px) {
     align-items: center;
     justify-content: space-between;
     flex: 0 0 100%;
+    padding: 0;
   }
 }
 
@@ -248,7 +250,7 @@ body._lock {
   height: 100%;
   text-align: center;
   text-transform: uppercase;
-  padding: 50px 0 0 0;
+  padding: 45px 0 0 0;
   @media (max-width: 991px) {
     padding: 0 0 0 0;
     text-align: center;
