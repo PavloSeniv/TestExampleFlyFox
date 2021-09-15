@@ -41,7 +41,22 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   @media (max-width: 767px) {
-    height: 60vh;
+    height: 65vh;
+  }
+
+  @media (max-width: 991px) {
+    height: 100vh;
+  }
+
+  @media (max-width: 1199px) {
+    height: 100vh;
+  }
+
+  @media (max-width: 1399px) {
+    height: 75vh;
+  }
+  @media (max-width: 1699px) {
+    height: 80vh;
   }
 }
 
