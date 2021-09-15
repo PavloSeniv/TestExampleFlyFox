@@ -124,7 +124,7 @@ body._lock {
   flex-direction: row;
   column-gap: 50px;
   @media (max-width: 991px) {
-    margin: 0 15px;
+    margin: 0 18px 0 15px;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -188,6 +188,10 @@ body._lock {
   & img {
     pointer-events: none;
   }
+
+  @media (max-width: 991px) {
+    margin-left: -6px;
+  }
 }
 
 .header__logo._active {
@@ -216,7 +220,8 @@ body._lock {
 .menu__body {
   width: 100%;
   display: grid;
-  grid-gap: 24px;
+  column-gap: 24px;
+  row-gap: 41px;
   align-items: center;
   grid-template-areas:
     "menu__nav menu__list-line menu__list-link-lang menu__list-link-login menu__list-link-log-up"
@@ -302,7 +307,7 @@ body._lock {
   grid-area: menu__list-line;
   position: relative;
   display: block;
-  top: 25px;
+  top: 22px;
   @media (max-width: 991px) {
     display: none;
   }
@@ -687,10 +692,6 @@ body._lock {
     display: none;
   }
 
-  .header__logo {
-    margin-left: 0;
-  }
-
   .menu__icon {
     z-index: 5;
     display: block;
@@ -821,7 +822,7 @@ body._lock {
 
   @media (max-width: 991px) {
     grid-gap: 0px;
-    margin-top: 135px;
+    margin-top: 133.5px;
     grid-template-rows: 114px 1fr;
   }
   @media (max-width: 1199px) {
@@ -1033,8 +1034,8 @@ body._lock {
   left: 60px !important;
   width: 50%;
   @media (max-width: 575px) {
-    top: 10px !important;
-    left: 20px !important;
+    top: 22px !important;
+    left: 15px !important;
   }
 
   @media (max-width: 767px) {
@@ -1052,7 +1053,8 @@ body._lock {
   left: 413px !important;
 
   @media (max-width: 375px) {
-    left: 120px !important;
+    top: 30px !important;
+    left: 116px !important;
   }
 
   @media (max-width: 435px) {
@@ -1128,14 +1130,14 @@ body._lock {
   }
 
   @media (max-width: 575px) {
-    margin-top: 10px;
+    margin-top: 24px;
   }
 
   @media (max-width: 767px) {
     margin-top: 60px;
     padding-bottom: 54px;
     display: grid;
-    grid-gap: 12px;
+    grid-gap: 9px;
     grid-template-areas:
       "category__item_1"
       "category__item_2"
@@ -1211,11 +1213,12 @@ body._lock {
   justify-content: center;
   align-items: center;
   @media (max-width: 991px) {
+    -moz-column-gap: 0;
     column-gap: 0;
     grid-template-columns: 1fr 11fr;
     top: 50%;
     width: 100%;
-    padding: 0 14px;
+    padding: 0 35px 0 14px;
   }
 }
 
