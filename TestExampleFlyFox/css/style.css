@@ -960,6 +960,14 @@ body._lock {
 }
 
 @media (max-width: 1299px) {
+  .menu__button-1 {
+    width: 130px;
+  }
+
+  .menu__button-2 {
+    width: 130px;
+  }
+
   .main__bg {
     height: 280px;
   }
@@ -1462,15 +1470,14 @@ body._lock {
   }
 }
 
-@media (min-width: 992px) and (max-width: 991px) {
-  .menu__link-tel {
-    font-size: 10px;
-  }
-}
-
 @media (min-width: 992px) and (max-width: 1399px) {
+  .menu__link-tel svg {
+    -webkit-margin-end: 10px;
+    margin-inline-end: 10px;
+  }
+
   .menu__link-tel {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .menu__button-1 {
@@ -1692,14 +1699,6 @@ body._lock {
 }
 
  @media (max-width: 320px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (min-width: 992px) and (max-width: 991px){
 
 @supports (-webkit-appearance:none){
 
