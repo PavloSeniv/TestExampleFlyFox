@@ -226,7 +226,7 @@ body._lock {
       "menu__nav menu__nav menu__nav menu__list-link-lang"
       "menu__contact  menu__list-link-login menu__list-link-log-up menu__list-input-tablet";
   }
-  @media (max-width: 1599px) {
+  @media (max-width: 1699px) {
     grid-template-areas:
       "menu__nav menu__nav menu__list-link-lang menu__list-link-login menu__list-link-log-up"
       "menu__list-input menu__contact menu__contact menu__contact menu__contact";
@@ -307,7 +307,7 @@ body._lock {
   @media (max-width: 1399px) {
     display: none;
   }
-  @media (max-width: 1599px) {
+  @media (max-width: 1699px) {
     display: none;
   }
 }
@@ -323,7 +323,7 @@ body._lock {
   @media (max-width: 1399px) {
     display: none;
   }
-  @media (max-width: 1599px) {
+  @media (max-width: 1699px) {
     display: none;
   }
 
@@ -600,17 +600,14 @@ body._lock {
   @media (max-width: 1299px) {
     width: 130px;
   }
-  @media (max-width: 1599px) {
-    width: 150px;
+  @media (max-width: 1499px) {
+    width: 145px;
   }
   @media (min-width: 992px) and (max-width: 1399px) {
     font-size: 13px;
   }
   @media (min-width: 1400px) and (max-width: 1799px) {
     font-size: 13px;
-  }
-  @media (max-width: 1607px) {
-    width: 200px;
   }
 }
 .menu__button-2 {
@@ -640,17 +637,14 @@ body._lock {
   @media (max-width: 1299px) {
     width: 130px;
   }
-  @media (max-width: 1599px) {
-    width: 150px;
+  @media (max-width: 1499px) {
+    width: 145px;
   }
   @media (min-width: 992px) and (max-width: 1399px) {
     font-size: 13px;
   }
   @media (min-width: 1400px) and (max-width: 1799px) {
     font-size: 13px;
-  }
-  @media (max-width: 1607px) {
-    width: 200px;
   }
 }
 
