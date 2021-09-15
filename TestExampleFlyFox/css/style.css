@@ -678,7 +678,9 @@ body._lock {
 
 .category__title {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 24px 1fr;
+  -moz-column-gap: 28px;
+  column-gap: 28px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1211,14 +1213,18 @@ body._lock {
   }
 
   .category__title {
+    -moz-column-gap: 0;
+    column-gap: 0;
     grid-template-columns: 1fr 11fr;
     top: 50%;
     width: 100%;
+    padding: 0 14px;
   }
 
   .title__text {
     font-weight: 600;
     font-size: 15px;
+    text-align: center;
   }
 }
 
