@@ -263,7 +263,7 @@ body._lock {
 }
 .menu__list {
   display: flex;
-  column-gap: 30px;
+  column-gap: 20px;
   justify-content: center;
   @media (max-width: 991px) {
     display: flex;
@@ -325,6 +325,10 @@ body._lock {
   }
   @media (max-width: 1599px) {
     display: none;
+  }
+
+  @media (max-width: 1799px) {
+    width: 240px;
   }
 }
 
@@ -655,14 +659,14 @@ body._lock {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
   }
   @media (min-width: 992px) and (max-width: 1399px) {
-    font-size: 11px;
+    font-size: 12px;
   }
   @media (min-width: 1400px) and (max-width: 1799px) {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 

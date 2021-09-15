@@ -305,8 +305,8 @@ body._lock {
 
 .menu__list {
   display: flex;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
   justify-content: center;
 }
 
@@ -737,7 +737,7 @@ body._lock {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
   }
 }
@@ -757,6 +757,12 @@ body._lock {
 
   .main__title {
     font-size: 55px;
+  }
+}
+
+@media (max-width: 1799px) {
+  .menu__line {
+    width: 240px;
   }
 }
 
@@ -1489,7 +1495,7 @@ body._lock {
   }
 
   .menu__link {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -1507,7 +1513,7 @@ body._lock {
   }
 
   .menu__link {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @supports (-webkit-appearance:none){
@@ -1531,6 +1537,14 @@ body._lock {
 }
 
  @media (max-width: 1815px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1799px){
 
 @supports (-webkit-appearance:none){
 
