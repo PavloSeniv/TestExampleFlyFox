@@ -141,7 +141,7 @@ body._lock {
     column-gap: 0px;
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1599px) {
     padding: 0 0 20px 0;
     margin: 0 76px;
     column-gap: 30px;
@@ -455,7 +455,7 @@ body._lock {
     margin-top: 10px;
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1599px) {
     justify-content: center;
     padding-right: 0px;
   }
@@ -626,12 +626,8 @@ body._lock {
     }
   }
 
-  @media (min-width: 992px) and (max-width: 1399px) {
+  @media (min-width: 992px) and (max-width: 1799px) {
     font-size: 12px;
-  }
-
-  @media (min-width: 1400px) and (max-width: 1799px) {
-    font-size: 13px;
   }
 }
 

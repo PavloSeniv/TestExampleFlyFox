@@ -817,6 +817,18 @@ body._lock {
 }
 
 @media (max-width: 1599px) {
+  .header__container {
+    padding: 0 0 20px 0;
+    margin: 0 76px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .menu__list-link-tel {
+    justify-content: center;
+    padding-right: 0px;
+  }
+
   .main__title span {
     font-size: 45px;
     line-height: 60px;
@@ -864,13 +876,6 @@ body._lock {
     height: 75vh;
   }
 
-  .header__container {
-    padding: 0 0 20px 0;
-    margin: 0 76px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-  }
-
   .header__logo {
     justify-content: center;
   }
@@ -907,11 +912,6 @@ body._lock {
 
   .menu__contact {
     width: auto;
-  }
-
-  .menu__list-link-tel {
-    justify-content: center;
-    padding-right: 0px;
   }
 
   .menu__list-link-button-1 {
@@ -1477,10 +1477,6 @@ body._lock {
     margin-inline-end: 10px;
   }
 
-  .menu__link-tel {
-    font-size: 12px;
-  }
-
   .menu__button-1 {
     font-size: 13px;
   }
@@ -1494,11 +1490,13 @@ body._lock {
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1799px) {
+@media (min-width: 992px) and (max-width: 1799px) {
   .menu__link-tel {
-    font-size: 13px;
+    font-size: 12px;
   }
+}
 
+@media (min-width: 1400px) and (max-width: 1799px) {
   .menu__button-1 {
     font-size: 13px;
   }
@@ -1700,6 +1698,14 @@ body._lock {
 }
 
  @media (min-width: 992px) and (max-width: 1399px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 992px) and (max-width: 1799px){
 
 @supports (-webkit-appearance:none){
 
