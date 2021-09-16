@@ -292,23 +292,13 @@ body._lock {
 .menu__list {
   display: flex;
   column-gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
 
   @media (max-width: 991px) {
     display: flex;
     justify-content: center;
     flex-direction: column;
     row-gap: 18px;
-  }
-
-  @media (max-width: 1399px) {
-    column-gap: 5px;
-    justify-content: space-between;
-  }
-
-  @media (max-width: 1919px) {
-    column-gap: 10px;
-    justify-content: space-between;
   }
 }
 
@@ -413,7 +403,7 @@ body._lock {
   }
 }
 
-.menu__list-link-log-up {
+.menu__list-link-sign-up {
   width: 100%;
   grid-area: menu__list-link-log-up;
   display: flex;
@@ -664,17 +654,12 @@ body._lock {
   &:hover {
     background: #cd1319;
   }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 
   @media (max-width: 991px) {
     width: 220px;
-  }
-
-  @media (max-width: 1299px) {
-    width: 130px;
-  }
-
-  @media (max-width: 1499px) {
-    width: 145px;
   }
 
   @media (min-width: 992px) and (max-width: 1399px) {
@@ -708,16 +693,12 @@ body._lock {
     color: #cd1319;
   }
 
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
   @media (max-width: 991px) {
     width: 220px;
-  }
-
-  @media (max-width: 1299px) {
-    width: 130px;
-  }
-
-  @media (max-width: 1499px) {
-    width: 145px;
   }
 
   @media (min-width: 992px) and (max-width: 1399px) {
