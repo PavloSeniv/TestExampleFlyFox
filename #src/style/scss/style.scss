@@ -654,12 +654,8 @@ body._lock {
   &:hover {
     background: #cd1319;
   }
-  @media (max-width: 767px) {
+  @media (max-width:  1199px) {
     width: 100%;
-  }
-
-  @media (max-width: 1199px) {
-    width: 220px;
   }
 
   @media (min-width: 1200px) and (max-width: 1399px) {
@@ -693,12 +689,8 @@ body._lock {
     color: #cd1319;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width:  1199px) {
     width: 100%;
-  }
-
-  @media (max-width: 1199px) {
-    width: 220px;
   }
 
   @media (min-width: 1200px) and (max-width: 1399px) {

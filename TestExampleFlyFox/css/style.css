@@ -1113,11 +1113,11 @@ body._lock {
   }
 
   .menu__button-1 {
-    width: 220px;
+    width: 100%;
   }
 
   .menu__button-2 {
-    width: 220px;
+    width: 100%;
   }
 
   .menu__body {
@@ -1371,14 +1371,6 @@ body._lock {
   html,
   body {
     height: 65vh;
-  }
-
-  .menu__button-1 {
-    width: 100%;
-  }
-
-  .menu__button-2 {
-    width: 100%;
   }
 
   .main__bg {
