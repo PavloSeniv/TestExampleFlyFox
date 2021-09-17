@@ -654,7 +654,7 @@ body._lock {
   &:hover {
     background: #cd1319;
   }
-  @media (max-width:  1199px) {
+  @media (max-width: 1199px) {
     width: 100%;
   }
 
@@ -689,7 +689,7 @@ body._lock {
     color: #cd1319;
   }
 
-  @media (max-width:  1199px) {
+  @media (max-width: 1199px) {
     width: 100%;
   }
 
@@ -1033,33 +1033,95 @@ body._lock {
 .main__bg {
   height: 450px;
   grid-area: main__bg;
-
-  @media (max-width: 375px) {
+  
+  @media (max-width: 320px) {
     height: 130px;
   }
 
+  @media (max-width: 339px) {
+    height: 130px;
+  }
+
+  @media (max-width: 375px) {
+    height: 160px;
+  }
+
+  @media (max-width: 399px) {
+    height: 130px;
+  }
+
+  @media (max-width: 439px) {
+    height: 140px;
+  }
+
   @media (max-width: 475px) {
-    height: 180px;
+    height: 150px;
+  }
+
+  @media (max-width: 499px) {
+    height: 170px;
+  }
+
+  @media (max-width: 539px) {
+    height: 190px;
   }
 
   @media (max-width: 575px) {
     height: 220px;
   }
 
+  @media (max-width: 599px) {
+    height: 160px;
+  }
+
+  @media (max-width: 639px) {
+    height: 180px;
+  }
+
   @media (max-width: 675px) {
     height: 200px;
+  }
+
+  @media (max-width: 699px) {
+    height: 220px;
+  }
+
+  @media (max-width: 739px) {
+    height: 220px;
   }
 
   @media (max-width: 767px) {
     height: 240px;
   }
 
+  @media (max-width: 785px) {
+    height: 270px;
+  }
+
+  @media (max-width: 799px) {
+    height: 280px;
+  }
+
+  @media (max-width: 849px) {
+    height: 300px;
+  }
+
   @media (max-width: 899px) {
     height: 320px;
   }
+
+  @media (max-width: 949px) {
+    height: 310px;
+  }
+
   @media (max-width: 999px) {
     height: 330px;
   }
+
+  @media (max-width: 1049px) {
+    height: 330px;
+  }
+
   @media (max-width: 1099px) {
     height: 350px;
   }
@@ -1135,23 +1197,23 @@ body._lock {
   }
 
   @media (max-width: 675px) {
-    left: 240px !important;
+    left: 280px !important;
   }
 
   @media (max-width: 767px) {
-    left: 270px !important;
+    left: 310px !important;
   }
 
   @media (max-width: 899px) {
-    left: 250px !important;
-  }
-
-  @media (max-width: 999px) {
     left: 300px !important;
   }
 
+  @media (max-width: 999px) {
+    left: 380px !important;
+  }
+
   @media (max-width: 1099px) {
-    left: 360px !important;
+    left: 445px !important;
   }
 
   @media (max-width: 1199px) {
