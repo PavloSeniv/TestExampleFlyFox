@@ -1308,6 +1308,7 @@ body._lock {
   }
 
   .category {
+    margin-top: 24px;
     display: grid;
     grid-template-areas: "category__item_1 category__item_2" "category__item_3 category__item_4";
     grid-template-columns: 1fr 1fr;
@@ -1386,7 +1387,6 @@ body._lock {
   }
 
   .category {
-    margin-top: 60px;
     padding-bottom: 54px;
     display: grid;
     grid-gap: 9px;
@@ -1425,10 +1425,6 @@ body._lock {
 
   .main__photo-auto-2 {
     left: 180px !important;
-  }
-
-  .category {
-    margin-top: 24px;
   }
 }
 
